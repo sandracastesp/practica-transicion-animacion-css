@@ -1,0 +1,121 @@
+* {
+    font-family: "Open Sans", serif;
+    font-size: 1rem;
+    color: #796450;
+    margin: 0px;
+    padding: 0px;
+}
+
+img {
+    width: 80px;
+    height: 80px;
+    border-radius: 62.5rem;
+}
+
+.contenedor-principal {
+    background: linear-gradient(45deg, #EDBC6B, #CB7F4F);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+}
+
+.contenedor-secundario {
+    background-color: #FFFFFF;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+        "izquierda derecha-arriba"
+        "izquierda derecha-centro"
+        "izquierda derecha-abajo";
+    width: 400px;
+    height: 400px;
+    gap: 3px;
+    box-shadow: 10px 10px 5px #AA8157;
+}
+
+
+.perfil {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0 50px 0;
+    align-items: center;
+}
+
+.perfil h1 {
+    margin-top: 30px;
+}
+
+.dinamico {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.dinamico a {
+  display: inline-block; 
+  border: 2px solid #796450; 
+  border-radius: 200px; 
+  padding: 5px 10px; 
+  text-decoration: none; 
+  color: #796450;
+  font-size: 16px; 
+  margin-bottom: 10px;
+  width: 130px;
+  height: 20px;
+}
+
+
+.dinamico a:hover{
+    color: white; 
+    background-color: #796450;
+    transition: all .3s ease-out;
+}
+    
+.izquierda {
+    grid-area: izquierda;
+    background-color: #FFFFFF;
+}
+
+
+.derecha-arriba {
+    grid-area: derecha-arriba;
+    background-color: #F5E8DF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.derecha-centro {
+    grid-area: derecha-centro;
+    background-color: #F5E8DF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.derecha-abajo {
+    grid-area: derecha-abajo;
+    background-color: #F5E8DF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.derecha-arriba:hover,
+.derecha-centro:hover,
+.derecha-abajo:hover{
+    color: #796450; 
+    background-color: #E2D0C4;
+    transition: all .3s ease-out;
+}
